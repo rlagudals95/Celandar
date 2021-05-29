@@ -1,5 +1,6 @@
 # calendar 프로젝트
-https://codesandbox.io/api/v1/sandboxes/2z6wp2jozn/screenshot.png
+![달력구현](https://user-images.githubusercontent.com/76252074/120060572-74f6f800-c093-11eb-8c5d-bc5c9496b04b.png)
+
 ## 개요
 
 - 일정을 관리할 수 있는 캘린더
