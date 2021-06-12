@@ -1,5 +1,11 @@
 # calendar 프로젝트
 
+## 달력 메인화면
+![image](https://user-images.githubusercontent.com/76252074/121760983-6e26b580-cb68-11eb-88c1-a7ea87b64a4c.png)
+## 일정추가하기 화면
+![image](https://user-images.githubusercontent.com/76252074/121761010-88f92a00-cb68-11eb-9877-2cb46b476335.png)
+
+
 ## 개요
 
 - 개인 프로젝트
