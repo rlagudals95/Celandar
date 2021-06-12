@@ -132,6 +132,7 @@ const Modal = styled.div`
   }
 `;
 const BtnGroup = styled.div`
+  
   margin: 0 auto;
   @media only screen and (max-width: 768px) {
     & Button {

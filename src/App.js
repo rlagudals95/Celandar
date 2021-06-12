@@ -9,7 +9,6 @@ import Calendar from "./Calendar";
 import Upload from "./Upload";
 import Detail from "./Detail";
 import NotFound from "./NotFound";
-import CalendarView from "./CalendarView";
 
 function App(props) {
   return (
@@ -31,7 +30,6 @@ function App(props) {
         </Route>
         <Route path="/upload" component={Upload} exact />
         <Route path="/detail/:defid" component={Detail} exact />
-        <Route path="/calendarview" component={CalendarView} />
         <Route component={NotFound} />
       </Switch>
     </>
@@ -41,25 +39,11 @@ function App(props) {
 const PositionBtn = styled.div`
   position: fixed;
   top: 90%;
-  right: 50px;
-  z-index: 10;
+  right: 15px;
+  z-index: 101;
   @media only screen and (max-width: 768px) {
     top: 90%;
     left: 10px;
-  }
-`;
-
-const CalendarViewBtn = styled.div`
-  position: fixed;
-  top: 0;
-  right: 10px;
-  z-index: 10;
-  @media only screen and (max-width: 768px) {
-    top: 80%;
-    left: 10px;
-    & p {
-      display: none;
-    }
   }
 `;
 

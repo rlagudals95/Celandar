@@ -41,22 +41,28 @@ function Calendar(props) {
 
   return (
     <div>
-      <FullCalendar
-        plugins={[dayGridPlugin]}
-        headerToolbar={{
-          center: "title",
-          start: "",
-          end: "prev next today",
-        }}
-        titleFormat={{ year: "numeric", month: "short" }}
-        // 완료된 일정 보기 눌렀을때 completedDate만 보여준다
-        events={btn ? data_list : completedDate} //달력 데이터 일정데이터를 여기서 보여주는 구나..!
-        eventClick={(e) => {
-          props.history.push("/detail/" + e.event._def.extendedProps.publicId);
-        }} //여기서 id를 붙여서 디테일 페이지로 넘어간다
-        height={"100vh"}
-      />
-      {/* 오른쪽아래 플로팅 버튼 */}
+      <Back />
+      <Wrap>
+        <FullCalendar
+          plugins={[dayGridPlugin]}
+          headerToolbar={{
+            center: "title",
+            start: "",
+            end: "prev next today",
+          }}
+          titleFormat={{ year: "numeric", month: "short" }}
+          // 완료된 일정 보기 눌렀을때 completedDate만 보여준다
+          events={btn ? data_list : completedDate} //달력 데이터 일정데이터를 여기서 보여주는 구나..!
+          eventClick={(e) => {
+            props.history.push(
+              "/detail/" + e.event._def.extendedProps.publicId
+            );
+          }} //여기서 id를 붙여서 디테일 페이지로 넘어간다
+          height={"100vh"}
+        />
+
+        {/* 오른쪽아래 플로팅 버튼 */}
+      </Wrap>
       <PositionBtn>
         <Fab
           color="secondary"
@@ -77,14 +83,31 @@ function Calendar(props) {
 const PositionBtn = styled.div`
   position: fixed;
   top: 80%;
-  right: 10px;
-  z-index: 10;
+  right: 15px;
+  z-index: 101;
   @media only screen and (max-width: 768px) {
-    top: 70%;
+    top: 84%;
     left: 10px;
     & p {
       display: none;
     }
   }
 `;
+
+const Wrap = styled.div`
+  position: absolute;
+  width: 90%;
+  height: 88%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+`;
+
+const Back = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+`;
+
 export default Calendar;
