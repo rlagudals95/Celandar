@@ -30,32 +30,4 @@
 <hr/>
 <br/>
 
-## 사용 시 주의 사항
 
-- firebase를 연결해서 사용하세요
-- 사용법은 다음과 같습니다.
-<hr/>
-<code>
-import firebase from 'firebase/app'; 
-  </code>
-  <br/>
-  <code>
-import 'firebase/firestore';
-    </code>
-    <br/><br/><br/>
-  <code>
-const firebaseConfig = {
-
-  키를 추가하세요
-};  </code><br/><br/>
-  <code>
-firebase.initializeApp(firebaseConfig);
-  </code>
-  <br/>
-    <code>
-const firestore = firebase.firestore();
-  </code>
-    <br/>
-      <code>
-export { firestore };
-</code>
