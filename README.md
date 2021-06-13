@@ -2,8 +2,11 @@
 
 ## 달력 메인화면
 ![image](https://user-images.githubusercontent.com/76252074/121760983-6e26b580-cb68-11eb-88c1-a7ea87b64a4c.png)
-## 일정추가하기 화면
+## 일정 추가하기 
 ![image](https://user-images.githubusercontent.com/76252074/121761010-88f92a00-cb68-11eb-9877-2cb46b476335.png)
+## 일정 완료하기 
+![image](https://user-images.githubusercontent.com/76252074/121804234-4f1b4700-cc80-11eb-8a41-cdc20ccf32e8.png)
+
 
 
 ## 개요
